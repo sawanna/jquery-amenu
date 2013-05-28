@@ -1,0 +1,29 @@
+{
+"name": "jquery-amenu",
+"title": "aMenu",
+"description": "jQuery animated horizontal menu",
+"keywords": [
+"menu",
+"animation"
+],
+"version": "1.0.0",
+"author": {
+"name": "Sawanna Team"
+},
+"maintainers": [
+{
+"name": "Makaka",
+"email": "makaka@sawanna.org"
+}
+],
+"licenses": [
+{
+"type": "GPL",
+"url": "http://www.gnu.org/licenses/gpl.html"
+}
+],
+"homepage": "http://codepress.ru/jquery/amenu",
+"dependencies": {
+"jquery": ">=1.2"
+}
+}
