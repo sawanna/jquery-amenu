@@ -1,0 +1,124 @@
+body {
+	margin: 0px;
+	padding: 20px 40px;
+	background: #B36084;
+	font-size: 12px;
+	font-family: Arial;
+	color: #000000;
+}
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-style: italic;
+}
+h2 {
+	font-weight: normal;
+}
+p {
+	margin: 5px 0px 20px;
+	padding: 0px;
+}
+fieldset {
+	margin: 20px 0px;
+}
+select {
+	width: 100px;
+}
+pre {
+	border: 1px dotted #000000;
+	background: #ffffff;
+	color: #000;
+	padding: 10px 20px;
+	border-radius: 7px;
+}
+
+/********* aMenu required ***********/
+
+#amenu-list {
+	margin:0px;
+	padding: 0px;
+	position: absolute !important;
+	z-index: 999;
+}
+#amenu-list li {
+	display: block;
+	margin:0px;
+	padding: 0px;
+	position: relative !important;
+	float: left;
+	vertical-align: bottom;
+}
+* html #amenu-list li {
+	width: 1px;
+}
+#amenu-list li a:link, 
+#amenu-list li a:visited, 
+#amenu-list li a:hover{
+	display: block;
+	margin:0px;
+	padding: 0px;
+	white-space: nowrap;
+}
+#amenu-list ul {
+	display: none;
+	margin:0px;
+	padding: 0px;
+	position: absolute !important;
+	height: auto;
+}
+#amenu-list ul li {
+	float: none;
+	margin:0px;
+	padding: 0px;
+}
+/******** aMenu look *******/
+
+#amenu-wrapper {
+	height: 40px;
+	background-color: #2C272B;
+	border: 1px solid #C788B5;
+	padding: 0px 10px;
+	border-radius: 7px;
+}
+#amenu-list li {
+	height: 40px;
+}
+#amenu-list li.parent > a {
+	background: url(images/down_arrow.gif) no-repeat 92% 50%;
+}
+#amenu-list li a:link, #amenu-list li a:visited {
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #AD738C;
+	padding: 0px 25px 0px 20px;
+	border-left: 2px solid #2C272B;
+}
+#amenu-list li a:hover, #amenu-list li a.active {
+	color: #fff;
+	background-color: #2E0F21;
+	border-left: 2px solid #540532;
+}
+
+#amenu-list ul {
+	border-left: 2px solid #540532;
+}
+#amenu-list ul li {
+	height: 30px;
+	background-color: #2E0F21;
+	border-top: 1px solid #444444;
+	border-bottom: 1px solid #090909;
+}
+#amenu-list ul li.parent > a {
+	background: url(images/right_arrow.gif) no-repeat 95% 50%;
+}
+#amenu-list ul li a:link, #amenu-list ul li a:visited {
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 40px 0px 20px;
+	border-left: none;
+}
+#amenu-list ul li a:hover, #amenu-list ul li a.active {
+	background-color: #A80C66;
+	color: #fff;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Animated jQuery menu</title>
+		<link rel="stylesheet" href="amenu.css" />
+		<script src="jquery.js"></script>
+		<script src="amenu.js"></script>
+		<script language="JavaScript">
+        $(document).ready(function(){
+			$('#amenu-list').amenu({
+				'speed': 200,
+				'animation': 'show'
+			});
+        });
+        </script>
+	</head>
+	<body>
+		<h1>aMenu</h1>
+		<p>Animated jQuery menu</p>
+		
+		<div id="amenu-wrapper">
+		<ul id="amenu-list">
+			<li>
+				<a href="#">Item 1</a>
+			</li>
+			<li>
+				<a href="#">Item 2</a>
+				<ul>
+					<li>
+						<a href="#">Item 2-1</a>
+					</li>
+					<li>
+						<a href="#">Item 2-2</a>
+					</li>
+					<li>
+						<a href="#">Item 2-3</a>
+						<ul>
+							<li>
+								<a href="#">Item 2-3-1</a>
+							</li>
+							<li>
+								<a href="#">Item 2-3-2</a>
+							</li>
+							<li>
+								<a href="#">Item 2-3-3</a>
+								<ul>
+									<li>
+										<a href="#">Item 2-3-3-1</a>
+									</li>
+									<li>
+										<a href="#">Item 2-3-3-2</a>
+									</li>
+									<li>
+										<a href="#">Item 2-3-3-3</a>
+									</li>	
+								</ul>
+							</li>
+							<li>
+								<a href="#">Item 2-3-4</a>
+							</li>
+							<li>
+								<a href="#">Item 2-3-5</a>
+								<ul>
+									<li>
+										<a href="#">Item 2-3-5-1</a>
+									</li>
+									<li>
+										<a href="#">Item 2-3-5-2</a>
+									</li>
+									<li>
+										<a href="#">Item 2-3-5-3</a>
+									</li>	
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Item 2-4</a>
+					</li>
+					<li>
+						<a href="#">Item 2-5</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Item 3</a>
+			</li>
+			<li>
+				<a href="#">Item 4</a>
+			</li>
+			<li>
+				<a href="#">Item 5</a>
+				<ul>
+					<li>
+						<a href="#">Item 5-1</a>
+					</li>
+					<li>
+						<a href="#">Item 5-2</a>
+					</li>
+					<li>
+						<a href="#">Item 5-3</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+		
+		<fieldset><legend>Menu settings</legend>
+		<strong>Animation:</strong>
+		<select onchange="aMenu.params.animation=$(this).val()">
+			<option value="show">Show</option>
+			<option value="fade">Fade</option>
+			<option value="slide">Slide</option>
+			<option value="wind">Wind</option>
+			<option value="none">None</option>
+		</select>
+		
+		<strong>Speed:</strong>
+		<select onchange="aMenu.params.speed=$(this).val()">
+			<option value="200">Fast</option>
+			<option value="400">Medium</option>
+			<option value="600">Slow</option>
+		</select>
+		</fieldset>
+		
+		<h2>MarkUp:</h2>
+		<pre>
+&lt;ul id="amenu-list"&gt;
+	&lt;li&gt;
+		&lt;a href="#"&gt;Item 1&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;a href="#"&gt;Item 2&lt;/a&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;a href="#"&gt;Item 2-1&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#"&gt;Item 2-2&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+		</pre>
+		
+		<h2>Usage:</h2>
+		<pre>
+$(document).ready(function(){
+	$('#amenu-list').amenu({
+		'speed': 200,
+		'animation': 'wind'       //  show, fade, slide, wind, none
+	});
+});
+		</pre>
+	</body>
+</html>
